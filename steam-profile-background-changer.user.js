@@ -10,8 +10,8 @@
 // @match        *://store.steampowered.com/points/shop/c/backgrounds/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=steamcommunity.com
 // @grant        unsafeWindow
-// @updateURL    https://github.com/wateroverdose/steam-profile-background-changer/blob/main/steam-profile-background-changer.user.js
-// @downloadURL  https://github.com/wateroverdose/steam-profile-background-changer/blob/main/steam-profile-background-changer.user.js
+// @updateURL    https://github.com/wateroverdose/steam-profile-background-changer/raw/main/steam-profile-background-changer.user.js
+// @downloadURL  https://github.com/wateroverdose/steam-profile-background-changer/raw/main/steam-profile-background-changer.user.js
 // ==/UserScript==
 
 (function() {
@@ -45,9 +45,9 @@
       btn.innerHTML = 'change background';
       inp.placeholder = 'enter url';
 
-      inp.style = 'width: 70%; background: #fff; border: 1px solid #ccc; border-radius: 3px; padding: 5px;';
+      inp.style = 'width: 70%; background: #fff; border: solid 1px #000; border-radius: 3px; padding: 5px;';
       cont.style = 'position: fixed; z-index: 9999; bottom: 6vh; right: 6vw; display: flex; align-items: center; width: 200px; height: 30px; box-shadow: 0 0 3px #000;';
-      btn.style = 'background: #fff; border-radius: 5px; border: 1px solid #000; font-size: 14px; font-weight: bold; color: #000;';
+      btn.style = 'background: #fff; border-radius: 5px; border: solid 1px #000; font-size: 12px; font-weight: bold; color: #000;';
 
       btn.addEventListener('click', () => {
          change_bg(inp.value);
@@ -73,7 +73,7 @@
       let vid_btn = store_body.appendChild(create_dom_node('div', 'flying_vid_btn'));
 
       vid_btn.innerHTML = 'copy background link';
-      vid_btn.style = 'position: fixed; bottom: 6vh; right: 6vw; z-index: 9999; cursor: pointer; padding: 5px; background: #fff; border-radius: 5px; border: 1px solid #000; box-shadow: 0 0 3px #000; font-size: 14px; font-weight: bold; color: #000;';
+      vid_btn.style = 'position: fixed; bottom: 6vh; right: 6vw; z-index: 9999; cursor: pointer; padding: 5px; background: #fff; border-radius: 5px; border: solid 1px #000; box-shadow: 0 0 3px #000; font-size: 14px; font-weight: bold; color: #000;';
 
       vid_btn.addEventListener('click', () => {
          try {
