@@ -1,2 +1,2 @@
 # steam-profile-background-changer
-see how a steam profile background looks like before buying it
+a userscript to see how a steam profile background looks like before buying it 
