@@ -1,5 +1,5 @@
 # steam-profile-background-changer
-a userscript to see how a steam profile background looks like before buying
+a userscript to see how a steam profile background looks like before spending points
 
 ## showcase and installation
 ### (click to go to youtube)
